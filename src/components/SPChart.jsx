@@ -25,11 +25,11 @@ export function SPChart() {
               label: "Portfolio Allocation",
               data: portfolioData.allocation,
               backgroundColor: [
-                "#FF6384",  // Stocks - Pink
-                "#36A2EB",  // Bonds - Blue
-                "#FFCE56",  // Real Estate - Yellow
-                "#4BC0C0",  // Crypto - Teal
-                "#9966FF"   // Cash - Purple
+                "#FF6384",  
+                "#36A2EB",  
+                "#FFCE56",  
+                "#4BC0C0",  
+                "#9966FF"   
               ],
               borderColor: "#fff",
               borderWidth: 2
@@ -39,7 +39,7 @@ export function SPChart() {
         options={{
           plugins: {
             legend: {
-              position: 'left',
+              position: 'top',
             },
             title: {
               display: true,

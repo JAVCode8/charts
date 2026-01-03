@@ -76,6 +76,9 @@ export function SalesChart() {
           plugins: {
             title: {
               text: "Sales Data"
+            },
+            datalabels: {
+              display: false
             }
           }
         }}

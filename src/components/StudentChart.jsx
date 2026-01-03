@@ -52,7 +52,7 @@ export function StudentChart() {
           plugins: {
             title: {
               text : "Student Scores"
-            }
+            },
           }
         }}  
       />

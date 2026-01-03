@@ -60,6 +60,9 @@ export function WeatherChart() {
             title: {
               display: true,
               text: 'Weekly Weather Forecast'
+            },
+            datalabels: {
+              display: false
             }
           },
           scales: {
