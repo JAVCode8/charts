@@ -1,0 +1,37 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: #8295a8;
+  padding: 20px;
+}
+
+.card {
+  background-color: #dff4ff;
+  border-radius: 20px;
+  padding: 16px;
+  width: 90%;
+  max-width: 600px;
+  min-height: 400px;
+  margin: 16px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    width: 50%;
+  }
+}
+
+.radarCard {
+  height: 400px;
+}
