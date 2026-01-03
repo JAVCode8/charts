@@ -1,5 +1,7 @@
 import { Chart as ChartJS, defaults } from "chart.js/auto";
 import { Pie } from "react-chartjs-2"
+import ChartDataLabels from 'chartjs-plugin-datalabels';
+ChartJS.register(ChartDataLabels);
 
 defaults.plugins.title.font.size = 20;
 defaults.plugins.title.align = "center";
@@ -51,6 +53,16 @@ export function SPChart() {
                   const usdValue = portfolioData.values[context.dataIndex];
                   return `${label}: ${value}% ($${usdValue.toLocaleString()})`;
                 }
+              }
+            },
+            datalabels: {
+              color: '#fff',           // Text color
+              font: {
+                weight: 'bold',
+                size: 16
+              },
+              formatter: (value, context) => {
+                return value + '%';    // Shows "45%", "25%", etc.
               }
             }
           }
