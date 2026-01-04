@@ -4,6 +4,7 @@ import './App.css'
 import { WeatherChart } from "./components/WeatherChart";
 import { StudentChart } from "./components/StudentChart";
 import { SPChart } from "./components/SPChart";
+import { FitnessTracker } from "./components/FitnessTracker";
 
 defaults.plugins.title.display = true;
 defaults.plugins.title.font.size = 20;
@@ -17,7 +18,7 @@ function App() {
       <div className="card"><WeatherChart /></div>
       <div className="card"><StudentChart /></div>
       <div className="card"><SPChart /></div>
-      <div className="card"></div>
+      <div className="card"><FitnessTracker /></div>
     </div>
   )
 }
